@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>MC Rhamon - O Artista</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #1a1a1a;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
         }
         .container {
@@ -24,45 +25,69 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
+        h1, h2 {
+            color: #1a1a1a;
         }
-        .image-container img {
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         footer {
-            background-color: #333;
+            background-color: #1a1a1a;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo ao Meu Site</h1>
+        <h1>MC Rhamon</h1>
+        <p>Conheça o talento e a trajetória do artista.</p>
     </header>
 
     <div class="container">
         <section>
-            <h2>Sobre Nós</h2>
-            <p>Este é um exemplo de um site simples com um espaço para adicionar uma imagem. Você pode substituir a imagem abaixo por qualquer imagem que desejar.</p>
+            <h2>Sobre MC Rhamon</h2>
+            <p>
+                MC Rhamon é um artista brasileiro que vem conquistando o cenário musical com seu estilo único e letras envolventes. Com uma mistura de ritmos e uma voz marcante, ele tem se destacado no mundo do funk e do hip-hop.
+            </p>
+            <p>
+                Suas músicas refletem sua realidade e suas experiências, conectando-se com o público de maneira autêntica. MC Rhamon é um nome que promete continuar crescendo e influenciando a cena musical.
+            </p>
         </section>
 
-        <div class="image-container">
-            <!-- Adicione o caminho da sua imagem no atributo src -->
-            <img src="caminho/para/sua/imagem.jpg" alt="Descrição da Imagem">
-        </div>
+        <section>
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery">
+                <!-- Adicione as fotos do MC Rhamon aqui -->
+                <img src="https://via.placeholder.com/400x300?text=Foto+1+MC+Rhamon" alt="MC Rhamon Foto 1">
+                <img src="https://via.placeholder.com/400x300?text=Foto+2+MC+Rhamon" alt="MC Rhamon Foto 2">
+                <img src="https://via.placeholder.com/400x300?text=Foto+3+MC+Rhamon" alt="MC Rhamon Foto 3">
+                <img src="https://via.placeholder.com/400x300?text=Foto+4+MC+Rhamon" alt="MC Rhamon Foto 4">
+                <img src="https://via.placeholder.com/400x300?text=Foto+5+MC+Rhamon" alt="MC Rhamon Foto 5">
+                <img src="https://via.placeholder.com/400x300?text=Foto+6+MC+Rhamon" alt="MC Rhamon Foto 6">
+            </div>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2023 MC Rhamon - Todos os direitos reservados.</p>
     </footer>
 
 </body>
